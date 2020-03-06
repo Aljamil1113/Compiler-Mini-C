@@ -1,0 +1,18 @@
+int summation(int x) {
+	if(x == 0) {
+		return 0;
+	}
+	else {
+		return x + summation(x-1);
+	}
+}
+
+int main(void) {
+	int a;
+	int res;
+
+	a = input();
+	output(summation(a));
+
+
+}
